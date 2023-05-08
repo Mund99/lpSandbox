@@ -3,7 +3,6 @@ import dash
 from dash import dcc
 from dash import html
 from dash.dependencies import Input, Output, State
-import json
 
 import firebase_admin
 from firebase_admin import credentials
@@ -142,5 +141,3 @@ def update_value(n_clicks, input_ticker, start_date, end_date):
 # Start the Dash app
 if __name__ == "__main__":
     app.run(debug=False, host="0.0.0.0",port=8080)
-
-
